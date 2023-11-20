@@ -9,17 +9,17 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
     <!-- <link rel="stylesheet" href="https://bootstrapmade.com/assets/css/demo.css?v=5.1" /> -->
     <style>
-      @media (min-width:320px)  { 
+      @media (max-width:320px)  { 
         .zoom-in-mobile{
-          animation: zoom-in-40-60 8s ease;
+          animation: zoom-in-40-60 8s cubic-bezier(0.51, 0.16, 0.37, 0.77);
         }
       }
       .zoom-in-mobile{
-          animation: zoom-in-25-50 8s ease;
+          animation: zoom-in-25-50 8s cubic-bezier(0.51, 0.16, 0.37, 0.77);
       }
       .center_back {
         position: absolute;
-        width: 50%;
+        width: 75%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -27,21 +27,21 @@
 
       @keyframes zoom-in-25-50 {
         0% {
-          width: 25%;
+          width: 55%;
           opacity: 0%;
         }
         100% {
-          width: 50%;
+          width: 75%;
           opacity: 100%;
         }
       }
       @keyframes zoom-in-40-60 {
         0% {
-          width: 60%;
+          width: 80%;
           opacity: 0%;
         }
         100% {
-          width: 80%;
+          width: 90%;
           opacity: 100%;
         }
       }
@@ -50,8 +50,6 @@
 
   <body
     style="
-      height: 100%;
-      width: 100%;
       background-color: black;
       color: white;
     "
