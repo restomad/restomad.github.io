@@ -17,14 +17,30 @@
       .zoom-in-mobile{
           animation: zoom-in-25-50 8s cubic-bezier(0.51, 0.16, 0.37, 0.77);
       }
-      .center_back {
+      .center_img {
         position: absolute;
         width: 75%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
+      .center_text {
+        font-family: "Franklin Gothic Medium";
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: opacit-in 8s cubic-bezier(0.51, 0.16, 0.37, 0.77);
+      }
 
+      @keyframes opacit-in {
+        0% {
+          opacity: 0%;
+        }
+        100% {
+          opacity: 100%;
+        }
+      }
       @keyframes zoom-in-25-50 {
         0% {
           width: 55%;
@@ -50,10 +66,19 @@
 
   <body
     style="
+      background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url('back_black.jpg');
+      background-position: center;
       background-color: black;
       color: white;
     "
-  >
-    <img class="center_back zoom-in-mobile" src="restomad_title.png"></img>
+    > 
+    <div>
+      <img class="center_img zoom-in-mobile" src="restomad_title.png"></img>
+      <span class="center_text">Incoming ...</span>
+    </div>
   </body>
 </html>
