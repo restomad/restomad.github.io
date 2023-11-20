@@ -8,16 +8,54 @@
     <meta name="robots" content="noindex, nofollow" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
     <!-- <link rel="stylesheet" href="https://bootstrapmade.com/assets/css/demo.css?v=5.1" /> -->
+    <style>
+      @media (min-width:320px)  { 
+        .zoom-in-mobile{
+          animation: zoom-in-40-60 8s ease;
+        }
+      }
+      .zoom-in-mobile{
+          animation: zoom-in-25-50 8s ease;
+      }
+      .center_back {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      @keyframes zoom-in-25-50 {
+        0% {
+          width: 25%;
+          opacity: 0%;
+        }
+        100% {
+          width: 50%;
+          opacity: 100%;
+        }
+      }
+      @keyframes zoom-in-40-60 {
+        0% {
+          width: 60%;
+          opacity: 0%;
+        }
+        100% {
+          width: 80%;
+          opacity: 100%;
+        }
+      }
+    </style>
   </head>
 
   <body
     style="
-      background-image: url('web_background.png');
       height: 100%;
-      /* background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; */
+      width: 100%;
+      background-color: black;
       color: white;
     "
-  ></body>
+  >
+    <img class="center_back zoom-in-mobile" src="restomad_title.png"></img>
+  </body>
 </html>
